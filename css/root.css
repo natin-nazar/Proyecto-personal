@@ -1,0 +1,116 @@
+/* Font import */
+
+@import url("https://fonts.googleapis.com/css?family=Ysabeau:700|Ysabeau:400");
+
+/* Root */
+
+:root {
+  --text: #ddeffa;
+  --dark: #020a0d;
+  --primary: #79c7ec;
+  --secondary: #163499;
+  --accent: #3a34e2;
+  --transition: 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+/* General styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Ysabeau";
+  font-weight: 400;
+  background: linear-gradient(
+    45deg,
+    rgba(2, 10, 13, 1) 19%,
+    rgba(9, 9, 121, 1) 70%,
+    rgba(58, 52, 226, 1) 100%
+  );
+  color: var(--text);
+}
+
+section {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+a:hover,
+a:focus {
+  color: var(--primary);
+}
+
+h2 {
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 12px 18px;
+  background-color: var(--primary);
+  color: var(--dark);
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  transition: var(--transition);
+}
+
+button:hover,
+button:focus {
+  background-color: transparent;
+  color: var(--text);
+  border: 1px solid var(--text);
+  cursor: default;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
